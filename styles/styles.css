@@ -7,13 +7,34 @@
   body {
     height: 100vh;
     display: flex;
-    background: #060AB2;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
   }
-  
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    min-height: 100vh;
+    
+ }
+
+
+  header h1{
+      text-align: center;
+      font-size: 3em;
+      font-family: 'Gloria Hallelujah', cursive;
+      margin:10px auto;
+      margin-top: 50px;
+      color:white;
+      text-shadow:3px 3px black;
+  }
   .memory-game {
     width: 640px;
     height: 640px;
     margin: auto;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
@@ -46,7 +67,7 @@
     padding: 20px;
     position: absolute;
     border-radius: 5px;
-    background: #1C7CCC;
+    background: #FFF;
     backface-visibility: hidden;
   }
   
