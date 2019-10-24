@@ -1,10 +1,18 @@
 const cards = document.querySelectorAll('.memory-card');
+totalClick = 0;
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
 function flipCard() {
+
+
+  //Update Click in HTML
+  var countClick = 1;
+  totalClick= totalClick+countClick;
+  document.getElementById("click-counter").innerHTML=totalClick;
+
   if (lockBoard) return;
   if (this === firstCard) return;
 
@@ -21,6 +29,10 @@ function flipCard() {
   checkForMatch();
 }
 
+function clearCounter(){
+  document.getElementById("click-counter").innerHTML=0;
+
+}
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 

@@ -30,6 +30,22 @@
       color:white;
       text-shadow:3px 3px black;
   }
+
+  .top{
+    margin: auto;
+  }
+
+  #click-counter,
+  #reset-counter{
+      width:180px; 
+      height:50px; 
+      border-radius:10px; 
+      margin: auto;
+      background-color: rgb(109, 221, 224);
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+  }
   .memory-game {
     width: 640px;
     height: 640px;
