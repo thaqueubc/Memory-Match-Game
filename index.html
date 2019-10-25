@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Memory Match Game</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer="defer"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -14,9 +15,10 @@
         </header>
 
         <div class="top">
-            <button id="click-counter"type="button" onclick="flipcard()">Total Clicks</button>
-            <button id="reset-counter"type="button" onclick="clearCounter()">Reset </button>
+            <button id="click-counter"type="button">Total Clicks</button>
+            <button id="reset-counter"type="button" onclick="shuffleCards()">Restart Game</button>
         </div>
+        <!-- To Do: Fix Alt and Data Framework Tags -->
         <section class="memory-game">
             <div class="memory-card" data-framework="aurelia">
             <img class="front-face" src="images/jquery.png" alt="jquery" />
@@ -73,6 +75,5 @@
             </div>
         </section>
     </div>
-      <script src="scripts/scripts.js"></script>
 </body>
 </html>
