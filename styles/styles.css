@@ -7,32 +7,75 @@
   body {
     height: 100vh;
     display: flex;
-    background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
   }
 
   .wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 700px;
+    /* max-width: 700px; */
     margin: 0 auto;
-    min-height: 100vh;
-    
+    min-height: 100vh;    
  }
 
+ .wrapper-main{
+   width: 800px;
+   max-height: 600px;
+   margin: auto;
+ }
+  header{
+    text-align: center;
+  }
 
-  header h1{
+  header h1 a{
       text-align: center;
-      font-size: 3em;
+      font-size: 1.5em;
       font-family: 'Gloria Hallelujah', cursive;
       margin:10px auto;
       margin-top: 50px;
+      text-decoration: none;
       color:white;
       text-shadow:3px 3px black;
   }
 
+  header.main h1{
+    font-size: 3em;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin:auto;
+    padding: 10px;
+    color:white;
+    text-shadow:3px 3px black;
+    text-align: center;
+  }
+
+  .main-p{
+    margin: auto;
+    color: white;
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px 5px;
+  }
+
   .top{
     margin: auto;
+  }
+
+  .main-top{
+    margin: auto;
+    text-align: center;
+    margin: 5px; 
+  }
+
+  .main-top a{
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin: 10px;
+    color: black;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px black;
   }
 
   #click-counter,
@@ -55,9 +98,30 @@
     flex-wrap: wrap;
     perspective: 1000px;
   }
+
+  .memory-game-hard {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* perspective: 1000px; */
+  }
   
-  .memory-card {
+  .memory-card{
     width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+
+  .hard {
+    width: calc(12% - 10px);
     height: calc(33.333% - 10px);
     margin: 5px;
     position: relative;

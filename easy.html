@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer="defer"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1><a href="index.html">Memory Match Game</a></h1>
+        </header>
+
+        <div class="top">
+            <button id="click-counter"type="button">Total Clicks</button>
+            <button id="reset-counter"type="button" onclick="shuffleCards()">Restart Game</button>
+        </div>
+        <!-- To Do: Fix Alt and Data Framework Tags -->
+        <section class="memory-game">
+            <div class="memory-card easy" data-framework="aurelia">
+            <img class="front-face" src="images/jquery.png" alt="jquery" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card easy" data-framework="aurelia">
+            <img class="front-face" src="images/jquery.png" alt="jquery" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card easy" data-framework="vue">
+            <img class="front-face" src="images/html.png" alt="Vue" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card easy" data-framework="vue">
+            <img class="front-face" src="images/html.png" alt="Vue" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card easy" data-framework="angular">
+            <img class="front-face" src="images/css.png" alt="Angular" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card easy" data-framework="angular">
+            <img class="front-face" src="images/css.png" alt="Angular" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card easy" data-framework="ember">
+            <img class="front-face" src="images/js.png" alt="Ember" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card easy" data-framework="ember">
+            <img class="front-face" src="images/js.png" alt="Ember" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card easy" data-framework="backbone">
+            <img class="front-face" src="images/c-sharp.png" alt="Backbone" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card easy" data-framework="backbone">
+            <img class="front-face" src="images/c-sharp.png" alt="Backbone" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card easy" data-framework="react">
+            <img class="front-face" src="images/php.png" alt="React" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card easy" data-framework="react">
+            <img class="front-face" src="images/php.png" alt="React" />
+            <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        </section>
+    </div>
+</body>
+</html>

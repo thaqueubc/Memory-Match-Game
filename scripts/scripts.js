@@ -2,6 +2,7 @@ const cards = document.querySelectorAll('.memory-card');
 var totalClicks = 0;
 var timeStart;
 
+
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;

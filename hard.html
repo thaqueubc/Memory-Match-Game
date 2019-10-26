@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hard Level</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer="defer"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1><a href="index.html">Memory Match Game</a></h1>
+        </header>
+
+        <div class="top">
+            <button id="click-counter"type="button">Total Clicks</button>
+            <button id="reset-counter"type="button" onclick="shuffleCards()">Restart Game</button>
+        </div>
+        <!-- To Do: Fix Alt and Data Framework Tags -->
+        <section class="memory-game-hard">
+            <div class="memory-card hard" data-framework="jquery">
+                <img class="front-face" src="images/jquery.png" alt="jquery" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="jquery">
+                <img class="front-face" src="images/jquery.png" alt="jquery" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="vue">
+                <img class="front-face" src="images/html.png" alt="Vue" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="vue">
+                <img class="front-face" src="images/html.png" alt="Vue" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="angular">
+                <img class="front-face" src="images/css.png" alt="Angular" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="angular">
+                <img class="front-face" src="images/css.png" alt="Angular" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="ember">
+                <img class="front-face" src="images/js.png" alt="Ember" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="ember">
+                <img class="front-face" src="images/js.png" alt="Ember" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="c-sharp">
+                <img class="front-face" src="images/c-sharp.png" alt="c-sharp" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="c-sharp">
+                <img class="front-face" src="images/c-sharp.png" alt="c-sharp" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="react">
+                <img class="front-face" src="images/php.png" alt="React" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="react">
+                <img class="front-face" src="images/php.png" alt="React" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="java">
+                <img class="front-face" src="images/java.png" alt="java" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="java">
+                <img class="front-face" src="images/java.png" alt="java" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="python">
+                <img class="front-face" src="images/python.jpg" alt="python" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card hard" data-framework="python">
+                <img class="front-face" src="images/python.jpg" alt="python" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="react">
+                <img class="front-face" src="images/react.png" alt="React" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="react">
+                <img class="front-face" src="images/react.png" alt="React" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card hard" data-framework="bootstrap">
+                <img class="front-face" src="images/bootstrap.png" alt="bootstrap" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="bootstrap">
+                <img class="front-face" src="images/bootstrap.png" alt="bootstrap" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="aws">
+                <img class="front-face" src="images/aws.png" alt="aws" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card hard" data-framework="aws">
+                <img class="front-face" src="images/aws.png" alt="aws" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            <div class="memory-card hard" data-framework="angular">
+                <img class="front-face" src="images/angular.png" alt="Angular" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+
+            
+            <div class="memory-card hard" data-framework="angular">
+                <img class="front-face" src="images/angular.png" alt="Angular" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        </section>
+    </div>  
+   
+</body>
+</html>
