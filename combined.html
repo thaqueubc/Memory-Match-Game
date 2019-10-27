@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer="defer"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h1>Memory Match Game</h1>
+        </header>
+        
+        <div class="top">
+            <button id="click-counter" type="button" >Total Clicks</button>
+            <button id="reset-counter" type="button" onclick="shuffleCards()">Restart Game</button>
+            <button id="change-difficulty" type="button" onclick="changeDifficulty()">Difficulty: Normal</button>
+        </div>
+        
+        <section class="memory-game" id="gameBoard">
+            <div class="memory-card" data-framework="jquery">
+                <img class="front-face" src="images/jquery.png" alt="jquery" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card" data-framework="jquery">
+                <img class="front-face" src="images/jquery.png" alt="jquery" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card" data-framework="html">
+                <img class="front-face" src="images/html.png" alt="html" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card" data-framework="html">
+                <img class="front-face" src="images/html.png" alt="html" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card" data-framework="css">
+                <img class="front-face" src="images/css.png" alt="css" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card" data-framework="css">
+                <img class="front-face" src="images/css.png" alt="css" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card" data-framework="js">
+                <img class="front-face" src="images/js.png" alt="js" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card" data-framework="js">
+                <img class="front-face" src="images/js.png" alt="js" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card" data-framework="c-sharp">
+                <img class="front-face" src="images/c-sharp.png" alt="c-sharp" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card" data-framework="c-sharp">
+                <img class="front-face" src="images/c-sharp.png" alt="c-sharp" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        
+            <div class="memory-card" data-framework="php">
+                <img class="front-face" src="images/php.png" alt="php" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+            <div class="memory-card" data-framework="php">
+                <img class="front-face" src="images/php.png" alt="php" />
+                <img class="back-face" src="images/ssd.PNG" alt="SSD" />
+            </div>
+        </section>
+    </div>
+</body>
+</html>

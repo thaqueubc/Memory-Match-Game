@@ -15,7 +15,7 @@
     flex-direction: column;
     /* max-width: 700px; */
     margin: 0 auto;
-    min-height: 100vh;    
+    min-height: 700px;    
  }
 
  .wrapper-main{
@@ -38,7 +38,7 @@
       text-shadow:3px 3px black;
   }
 
-  header.main h1{
+  header h1{
     font-size: 3em;
     font-family: 'Gloria Hallelujah', cursive;
     margin:auto;
@@ -58,7 +58,7 @@
   }
 
   .top{
-    margin: auto;
+    margin: 0 auto;
   }
 
   .main-top{
@@ -79,7 +79,7 @@
   }
 
   #click-counter,
-  #reset-counter{
+  #reset-counter {
       width:180px; 
       height:50px; 
       border-radius:10px; 
@@ -89,6 +89,22 @@
       font-weight: bold;
       font-size: 1em;
   }
+
+  #change-difficulty {
+      width:180px; 
+      height:50px; 
+      border-radius:10px; 
+      margin: auto;
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+  }
+
+  .hardButton {
+    background-color: red !important; 
+  }
+
   .memory-game {
     width: 640px;
     height: 640px;
@@ -106,12 +122,13 @@
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    /* perspective: 1000px; */
+    /* perspective: 1800px; */
   }
   
   .memory-card{
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
+    max-height: 160px;
     margin: 5px;
     position: relative;
     transform: scale(1);
